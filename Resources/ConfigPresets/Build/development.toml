@@ -1,0 +1,54 @@
+﻿[net]
+tickrate = 30
+port = 1212
+bind = "172.23.10.177"        # 2026 builds use 'bind' instead of 'bindto'
+max_connections = 256
+
+[status]
+enabled = true
+connectaddress = "udp://172.23.10.177:1212"
+
+[game]
+lobbyenabled = true
+map = "Dev"
+role_timers = false
+admin_job_tracking = true
+role_loadout_timers = false
+
+[events]
+enabled = false
+
+[ghost]
+role_time = 0.5
+quick_lottery = true
+
+[gateway]
+generator_enabled = false
+
+[movement]
+mob_pushing = true
+
+[physics]
+grid_splitting = false
+
+[procgen]
+preload = false
+
+[salvage]
+expedition_cooldown = 30.0
+
+[shuttle]
+grid_fill = false
+auto_call_time = 0
+emergency = false
+arrivals = false
+preload_grids = false
+
+[admin]
+see_own_notes = true
+new_player_threshold = 120
+
+[ic]
+random_characters = false
+random_species_weights = ""
+ssd_sleep_time = 3600
