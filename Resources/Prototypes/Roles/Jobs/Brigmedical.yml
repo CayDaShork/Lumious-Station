@@ -1,0 +1,29 @@
+- type: job
+  id: Brigmedical
+  name: job-name-brigmedic
+  description: "Hybrid security/medical role."
+  playTimeTracker: JobBrigmedical
+
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 2.5h
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 2.5h
+
+  startingGear: BrigmedicGear   # ← Use the existing Brigmed gear ID
+  icon: "JobIconBrigmedic"
+  supervisors: job-supervisors-hos
+  
+  loadoutGroups:
+    - SecurityBackpack       # <-- Use the same ones Brigmed uses
+    - SecurityJumpsuit
+    - Trinkets
+
+  access:
+    - Medical
+    - Maintenance
+    - Security
+  extendedAccess:
+    - Chemistry

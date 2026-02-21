@@ -110,6 +110,7 @@
   - SecurityOfficer
   - Detective
   - Warden
+  - Brigmedical
 
 - type: department
   id: Science
